@@ -1,0 +1,16 @@
+#Directories
+**/bin/
+bin-int/
+Legacy Engine/Legacy Engine/Libraries/
+
+#Files
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+#File Extensions
+**.html
+**.lib
+**.dll
