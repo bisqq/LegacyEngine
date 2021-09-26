@@ -1,7 +1,7 @@
 #Directories
 **/bin/
 bin-int/
-Legacy Engine/Legacy Engine/Libraries/
+**/Legacy Engine/Legacy Engine/Libraries/
 
 #Files
 .vs/
