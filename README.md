@@ -1,4 +1,5 @@
 # Legacy Engine
+The Legacy is the first of its kind graphics engine for film makers!
 
-Legacy Engine current release version 0.0
- 
+## Legacy Engine version 
+0.0
