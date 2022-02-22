@@ -1,5 +1,5 @@
 # Legacy Engine
-The Legacy Engine is the first of its kind graphics engine for film makers! I am currently working on the main sub modules that will be used to build the engine.
+I am currently working on the main sub modules that will be used to build the engine.
 
 ### TODO SubModules
 - [Rendering Engine](https://github.com/bisqq/Titan) (Currently in Progress)
