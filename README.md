@@ -7,3 +7,4 @@ I am currently working on the main sub modules that will be used to build the en
 - Digital Audio Workstation
 - Physics Engine
 - PBR Painting and Procedural Authoring
+- Composition and General Editing Interface
