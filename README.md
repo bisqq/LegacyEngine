@@ -4,7 +4,11 @@
 ![](https://badgen.net/badge/License/EULA/yellow?icon=github)
 ![](https://badgen.net/badge/Version/0.0.0/green?icon=github)
 
-I am currently working on the main sub modules that will be used to build the engine.
+I am currently working on the main sub modules that will be used to build the engine. A more detailed `Readme` coming soon.
+
+### TODO General
+- Redesign code (for good coding practices)
+- folder rework
 
 ### TODO SubModules
 - [Rendering Engine](https://github.com/bisqq/Titan) (Currently in Progress)
