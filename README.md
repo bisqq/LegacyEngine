@@ -6,10 +6,6 @@
 
 I am currently working on the main sub modules that will be used to build the engine. A more detailed `Readme` coming soon.
 
-### TODO General
-- Redesign code (for good coding practices)
-- folder rework
-
 ### TODO SubModules
 - [Rendering Engine](https://github.com/bisqq/Titan) (Currently in Progress)
 - Immediate Mode GUI
