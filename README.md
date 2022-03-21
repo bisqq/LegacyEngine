@@ -1,4 +1,4 @@
-# Legacy Engine ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+# Legacy Engine ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![](https://img.shields.io/badge/macos-000000?style=for-the-badge&logo=macos&logoColor=white) ![](	https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 ![](https://badgen.net/badge/License/EULA/yellow?icon=github)
 ![](https://badgen.net/badge/Version/0.0.0/green?icon=github)
