@@ -1,6 +1,6 @@
 # Legacy Engine ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-![](https://badgen.net/badge/Price/Free/blue?icon=github)
+![](https://badgen.net/badge/Price/Free-To-Use/blue?icon=github)
 ![](https://badgen.net/badge/License/EULA/yellow?icon=github)
 ![](https://badgen.net/badge/Version/0.0.0/green?icon=github)
 
