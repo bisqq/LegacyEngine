@@ -5,16 +5,26 @@
 
 ### TODO Submodules
 - [Rendering Engine](https://github.com/bisqq/Titan) (Currently in Progress)
-- Immediate Mode GUI
-- Digital Audio Workstation
 - Physics Engine
+- Audio Engine
+- Immediate Mode GUI
+
+### Features
+- Digital Audio Workstation
 - PBR Painting and Procedural Authoring
 - Composition and General Editing Interface
+- Artificial Intelligence
+- Procedural workflow through nodes
+  - Modeling(maybe)
+  - Audio design
+- Scripting
 
 ## Introduction
 The Legacy Engine is the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform, although I will be primarily focusing on the Windows build. I am currently working on the main sub modules that will be used to build the engine. A current list of `TODO SubModules` will be used to keep track of the main features and current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
 
 The Legacy Engine website will start production soon, which will include documentation, tutorials, and the fully stable version of the engine. As of now I will be working on this engine to get it up for `pre-alpha` as soon as possible.
+
+
 
 ## Architecture and Design
 
