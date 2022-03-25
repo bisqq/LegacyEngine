@@ -9,7 +9,7 @@
 - Audio Engine
 - Immediate Mode GUI
 
-### Features
+### Features (More to add!)
 - Digital Audio Workstation
 - PBR Painting and Procedural Authoring
 - Composition and General Editing Interface
