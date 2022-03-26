@@ -16,7 +16,8 @@ The Legacy Engine website will start production soon, which will include documen
 
 ## Current Engine Architecture (subject to change)
 
-![](https://user-images.githubusercontent.com/29154540/160259853-70a1f2d5-347d-4bc7-9ddb-a6969f6b9bd9.jpg)
+![](https://user-images.githubusercontent.com/29154540/160259883-6b254c50-5697-46a4-8e7f-5a17e678963d.jpg)
+
 
 
 ## Getting Started
