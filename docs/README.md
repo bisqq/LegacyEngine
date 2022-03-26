@@ -10,12 +10,13 @@
 - Immediate Mode GUI
 
 ## Introduction
-The Legacy Engine is the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform, although I will be primarily focusing on the Windows build. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main features and current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
+The Legacy Engine is the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform, although I will be primarily focusing on the Windows build. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main core features and the current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
 
 The Legacy Engine website will start production soon, which will include documentation, tutorials, and the fully stable version of the engine. As of now I will be working on this engine to get it up for `pre-alpha` as soon as possible.
 
-## Architecture and Design
+## Current Engine Architecture (subject to change)
 
+![LegacyEngineArchitecture](https://user-images.githubusercontent.com/29154540/160258938-39ec4462-5366-4f49-83b3-6ec6d7493cc8.png)
 
 ## Getting Started
 1. Download your IDE for your platform below.
