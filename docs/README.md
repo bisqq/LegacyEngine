@@ -16,7 +16,8 @@ The Legacy Engine website will start production soon, which will include documen
 
 ## Current Engine Architecture (subject to change)
 
-![LegacyEngineArchitecture](https://user-images.githubusercontent.com/29154540/160258938-39ec4462-5366-4f49-83b3-6ec6d7493cc8.png)
+![](https://user-images.githubusercontent.com/29154540/160259800-185c1482-c4b4-4d7f-a403-92942f983458.png)
+
 
 ## Getting Started
 1. Download your IDE for your platform below.
