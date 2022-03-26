@@ -21,7 +21,7 @@
 - Animation
 
 ## Introduction
-The Legacy Engine is the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform, although I will be primarily focusing on the Windows build. I am currently working on the main sub modules that will be used to build the engine. A current list of `TODO SubModules` will be used to keep track of the main features and current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
+The Legacy Engine is the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform, although I will be primarily focusing on the Windows build. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main features and current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
 
 The Legacy Engine website will start production soon, which will include documentation, tutorials, and the fully stable version of the engine. As of now I will be working on this engine to get it up for `pre-alpha` as soon as possible.
 
