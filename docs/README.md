@@ -8,7 +8,7 @@
 - Physics Engine
 - Audio Engine
 - Immediate Mode GUI
-- Custom High Level Programming Language (possibly)
+- Custom High Level Programming Language (Possibly)
 
 ## Introduction
 I believe in challenging the status quo, that is defined in the entertainment industry, it's time for hobbyists, indie teams, and individuals who want a taste of the high production tools used in Hollywood and main stream media. I started this project because a few years ago I really wanted to tell stories, show off some cool graphics and audio, but it was a lot for one person. There were so many softwares out there for each respective field ranging from free to an insane amount of money, that I didn't have. It took too much time to just create a short video clip. I value efficiency just like you do!
