@@ -4,10 +4,10 @@
 ![](https://badgen.net/badge/Version/0.0.0/green?icon=github)
 
 ### TODO Submodules
-- [Rendering Engine](https://github.com/bisqq/Titan) (Currently in Progress)
+- [Rendering Engine](https://github.com/bisqq/Titan) (very basic setup complete, will then integrate with gui)
 - Physics Engine
 - Audio Engine
-- Immediate Mode GUI
+- [Immediate Mode GUI](https://github.com/bisqq/Nexus) (Currently in Progress)
 - Custom High Level Programming Language (Possibly)
 
 ## Introduction
