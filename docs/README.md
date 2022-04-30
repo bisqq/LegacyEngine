@@ -11,21 +11,11 @@
 - Custom High Level Programming Language (Possibly)
 
 ## Introduction
-I believe in challenging the status quo, that is defined in the entertainment industry, it's time for hobbyists, indie teams, and individuals who want a taste of the high production tools used in Hollywood and main stream media. I started this project because a few years ago I really wanted to tell stories, show off some cool graphics and audio, but it was a lot for one person. There were so many softwares out there for each respective field ranging from free to an insane amount of money, that I didn't have. It took too much time to just create a short video clip. I value efficiency just like you do!
-
-This is how I plan on revolutionizing this industry, I present to you The Legacy Engine! This engine is inspired by modern day game engines and it's the first of its kind graphics engine for filmmakers! Legacy is an interactive application and rendering engine for the Windows, MacOS and Debian platform. I want this engine to be easy to use, user friendly, a time saver and best of yet free to use! I feel like this industry has not been given enough love. The gaming industry has evolved so much in 20 years, that film makers have been left in the dust. These days making a game is accessible for everyone with the best and top of the line tools and softwares. Yet nothing for the average person who is inspired to create a story to share with the world in a quick and highly produced way.
-
-I will be primarily focusing on the Windows build and will later add support for mac and linux. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main core features and the current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production. 
-
-The Legacy Engine website will start production soon, which will include documentation, tutorials, and the fully stable version of the engine. As of now I will be working on this engine to get it up for `pre-alpha` as soon as possible.
-
-
+I will be primarily focusing on the Windows build and will later add support for mac and linux. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main core features and the current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production.
 
 ## Current Engine Architecture (subject to change)
 
 ![](https://user-images.githubusercontent.com/29154540/160259883-6b254c50-5697-46a4-8e7f-5a17e678963d.jpg)
-
-
 
 ## Getting Started
 1. Download your IDE for your platform below.
