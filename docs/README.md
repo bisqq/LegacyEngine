@@ -4,11 +4,9 @@
 ![](https://badgen.net/badge/Version/0.0.0/green?icon=github)
 
 ### TODO Submodules
-- [Rendering Engine](https://github.com/bisqq/Titan) (very basic setup complete, will then integrate with gui)
+- [Rendering Engine](https://github.com/bisqq/Titan)
 - Physics Engine
 - Audio Engine
-- Dear ImGui (Currently in Progress)
-- Custom High Level Programming Language (Possibly)
 
 ## Introduction
 I will be primarily focusing on the Windows build and will later add support for mac and linux. I am currently working on the main sub modules that will be used to build the engine. A current list above will be used to keep track of the main core features and the current development. This repository is primarily targeted for developers and those who are interested in contributing to the engine, it might not be stable for full production.
