@@ -5,18 +5,33 @@
 
 #include "DearImGui/imgui.h"
 
-class Legacy {
+class GuiSystem {
 public:
 	void RenderGui();
 
 private:
 	void Docking();
 	void MenuBar();
+	void SectionBar();
+	void AlignButtons();
+
+	enum LegacyWindows {
+		MEDIA,
+		TEXTURE,
+		COLOUR,
+		EDIT,
+		TIMELINE,
+		AUDIO,
+		DELIVER
+	};
 
 private:
-	bool opt_fullscreen = true;
-	bool opt_padding = false;
+	bool optFullscreen = true;
+	bool optPadding = false;
+
 	ImGuiDockNodeFlags dockspace_flags = ImGuiDockNodeFlags_None;
+
+	LegacyWindows legacyWindows;
 };
 
 #endif // !APPLICATION

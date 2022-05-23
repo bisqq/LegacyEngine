@@ -1,12 +1,14 @@
-#include "Legacy.h"
+#include "Core/Headers/GuiSystem.h"
+#include "Editor/Editor.h"
 
-void Legacy::RenderGui() {
+void GuiSystem::RenderGui() {
     Docking();
+    SectionBar();
 }
 
-void Legacy::Docking() {
+void GuiSystem::Docking() {
     ImGuiWindowFlags window_flags = ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoDocking;
-    if (opt_fullscreen) {
+    if (optFullscreen) {
         const ImGuiViewport* viewport = ImGui::GetMainViewport();
         ImGui::SetNextWindowPos(viewport->WorkPos);
         ImGui::SetNextWindowSize(viewport->WorkSize);
@@ -24,16 +26,16 @@ void Legacy::Docking() {
         window_flags |= ImGuiWindowFlags_NoBackground;
     }
 
-    if (!opt_padding) {
+    if (!optPadding) {
        ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));
     }
 
     ImGui::Begin("DockSpace", nullptr, window_flags);
-    if (!opt_padding) {
+    if (!optPadding) {
         ImGui::PopStyleVar();
     }
 
-    if (opt_fullscreen) {
+    if (optFullscreen) {
         ImGui::PopStyleVar(2);
     }
 
@@ -48,20 +50,20 @@ void Legacy::Docking() {
     ImGui::End();
 }
 
-void Legacy::MenuBar() {
+void GuiSystem::MenuBar() {
     if (ImGui::BeginMenuBar()) {
         if (ImGui::BeginMenu("File")) {
             // Disabling fullscreen would allow the window to be moved to the front of other windows,
             // which we can't undo at the moment without finer window depth/z control.
-            ImGui::MenuItem("Fullscreen", NULL, &opt_fullscreen);
-            ImGui::MenuItem("Padding", NULL, &opt_padding);
+            ImGui::MenuItem("Fullscreen", NULL, &optFullscreen);
+            ImGui::MenuItem("Padding", NULL, &optPadding);
             ImGui::Separator();
 
             if (ImGui::MenuItem("Flag: NoSplit", "", (dockspace_flags & ImGuiDockNodeFlags_NoSplit) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoSplit; }
             if (ImGui::MenuItem("Flag: NoResize", "", (dockspace_flags & ImGuiDockNodeFlags_NoResize) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoResize; }
             if (ImGui::MenuItem("Flag: NoDockingInCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_NoDockingInCentralNode) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoDockingInCentralNode; }
             if (ImGui::MenuItem("Flag: AutoHideTabBar", "", (dockspace_flags & ImGuiDockNodeFlags_AutoHideTabBar) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_AutoHideTabBar; }
-            if (ImGui::MenuItem("Flag: PassthruCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_PassthruCentralNode) != 0, opt_fullscreen)) { dockspace_flags ^= ImGuiDockNodeFlags_PassthruCentralNode; }
+            if (ImGui::MenuItem("Flag: PassthruCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_PassthruCentralNode) != 0, optFullscreen)) { dockspace_flags ^= ImGuiDockNodeFlags_PassthruCentralNode; }
             ImGui::Separator();
 
             ImGui::EndMenu();
@@ -73,6 +75,98 @@ void Legacy::MenuBar() {
 
         ImGui::EndMenuBar();
     }
+}
+
+void GuiSystem::AlignButtons() {
+    ImGuiStyle& style = ImGui::GetStyle();
+    float width = 0.0f;
+    width += ImGui::CalcTextSize("Media").x;
+    width += style.ItemSpacing.x;
+    width += 1000.0f;
+    width += style.ItemSpacing.x;
+    width += ImGui::CalcTextSize("Deliver").x;
+
+    float avail = ImGui::GetContentRegionAvail().x;
+    float off = (avail - width) * 0.5f;
+    if (off > 0.0f) {
+        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + off);
+    }
+}
+
+void GuiSystem::SectionBar() {
+    ImGuiWindowFlags sectionBarFlags = 0;
+    sectionBarFlags |= ImGuiWindowFlags_NoDecoration;
+    sectionBarFlags |= ImGuiWindowFlags_NoMove;
+    sectionBarFlags |= ImGuiWindowFlags_NoScrollWithMouse;
+
+    ImGui::Begin("##SectionBar", nullptr, sectionBarFlags);
+    AlignButtons();
+
+    if (ImGui::Button("Media", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = MEDIA;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("Texture", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = TEXTURE;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("Colour", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = COLOUR;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("Editor", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = EDIT;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("TimeLine", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = TIMELINE;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("Audio", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = AUDIO;
+    }
+    ImGui::SameLine();
+
+    if (ImGui::Button("Deliver", ImVec2(150.0f, 0.0f))) {
+        legacyWindows = DELIVER;
+    }
+
+    ImGui::End();
+
+    Editor editor;
+
+    switch (legacyWindows) {
+    case MEDIA:
+        break;
+    
+    case TEXTURE:
+        break;
+    
+    case COLOUR:
+        break;
+
+    case EDIT:
+        editor.RenderEditor();
+        break;
+
+    case TIMELINE:
+        break;
+
+    case AUDIO:
+        break;
+
+    case DELIVER:
+        break;
+
+    default:
+        break;
+    }
+    
 }
 
 
