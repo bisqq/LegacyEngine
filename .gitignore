@@ -1,7 +1,8 @@
 #Directories
 **/bin/
 bin-int/
-**/Legacy Engine/Legacy Engine/Libraries/
+**/LegacyEngine/Vendor/Glfw/
+**/LegacyEngine/Vendor/Vulkan/
 
 #Files
 .vs/
