@@ -52,28 +52,52 @@ void GuiSystem::Docking() {
 
 void GuiSystem::MenuBar() {
     if (ImGui::BeginMenuBar()) {
-        if (ImGui::BeginMenu("File")) {
-            // Disabling fullscreen would allow the window to be moved to the front of other windows,
-            // which we can't undo at the moment without finer window depth/z control.
-            ImGui::MenuItem("Fullscreen", NULL, &optFullscreen);
-            ImGui::MenuItem("Padding", NULL, &optPadding);
-            ImGui::Separator();
 
-            if (ImGui::MenuItem("Flag: NoSplit", "", (dockspace_flags & ImGuiDockNodeFlags_NoSplit) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoSplit; }
-            if (ImGui::MenuItem("Flag: NoResize", "", (dockspace_flags & ImGuiDockNodeFlags_NoResize) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoResize; }
-            if (ImGui::MenuItem("Flag: NoDockingInCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_NoDockingInCentralNode) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_NoDockingInCentralNode; }
-            if (ImGui::MenuItem("Flag: AutoHideTabBar", "", (dockspace_flags & ImGuiDockNodeFlags_AutoHideTabBar) != 0)) { dockspace_flags ^= ImGuiDockNodeFlags_AutoHideTabBar; }
-            if (ImGui::MenuItem("Flag: PassthruCentralNode", "", (dockspace_flags & ImGuiDockNodeFlags_PassthruCentralNode) != 0, optFullscreen)) { dockspace_flags ^= ImGuiDockNodeFlags_PassthruCentralNode; }
-            ImGui::Separator();
-
-            ImGui::EndMenu();
-        }
-
-        if (ImGui::BeginMenu("Edit")) {
-            ImGui::EndMenu();
-        }
+        MenuFile();
+        MenuEdit();
 
         ImGui::EndMenuBar();
+    }
+}
+
+void GuiSystem::MenuFile() {
+    if (ImGui::BeginMenu("File")) {
+        if (ImGui::MenuItem("New", nullptr, &isNewSelected)) {
+
+        }
+
+        if (ImGui::MenuItem("Open", nullptr, &isOpenSelected)) {
+
+        }
+        ImGui::Separator();
+
+        if (ImGui::MenuItem("Open Recent", nullptr, &isOpenRecentSelected)) {
+
+        }
+        ImGui::Separator();
+
+        if (ImGui::MenuItem("Save", nullptr, &isSaveSelected)) {
+
+        }
+
+        if (ImGui::MenuItem("Save All", nullptr, &isSaveAllSelected)) {
+
+        }
+        ImGui::Separator();
+
+        if (ImGui::MenuItem("Exit", nullptr, &isExitSelected)) {
+
+        }
+
+        ImGui::EndMenu();
+    }
+}
+
+void GuiSystem::MenuEdit() {
+    if (ImGui::BeginMenu("Edit")) {
+
+
+        ImGui::EndMenu();
     }
 }
 
