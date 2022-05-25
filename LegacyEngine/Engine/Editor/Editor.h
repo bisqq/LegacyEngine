@@ -8,6 +8,9 @@ struct Editor {
 	~Editor();
 
 	void RenderEditor();
+	void Viewport();
+	void ContentBrowser();
+	void ToolBar();
 };
 
 #endif // !EDITOR
