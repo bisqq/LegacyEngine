@@ -3,6 +3,7 @@
 bin-int/
 **/LegacyEngine/Vendor/Glfw/
 **/LegacyEngine/Vendor/Vulkan/
+**/LegacyEngine/Vendor/glm/
 
 #Files
 .vs/

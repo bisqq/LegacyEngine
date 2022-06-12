@@ -1,4 +1,4 @@
-#include "Core/Headers/GuiSystem.h"
+#include "Core/Include/GuiSystem.h"
 #include "Editor/Editor.h"
 
 void GuiSystem::RenderGui() {

@@ -3,7 +3,7 @@
 #define LEGACY_DEBUG
 #include "Libraries/Debugging.h"
 #include "Vendor/Glfw/glfw3.h"
-#include "Core/Headers/GuiSystem.h"
+#include "Core/Include/GuiSystem.h"
 
 static GLFWwindow* window;
 static GuiSystem guiSystem;
